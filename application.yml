@@ -17,6 +17,9 @@ management:
       exposure:
         include: '*'
         base-path: /actuator
+  endpoint:
+    prometheus:
+      enabled: true  
 # Enable zipkin traces
   tracing:
     sampling:
