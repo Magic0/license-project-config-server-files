@@ -18,12 +18,12 @@ management:
         include: '*'
         base-path: /actuator
 # Enable zipkin traces
-  tracing:
-    sampling:
-      probability: 1.0
-  zipkin:
-    config:
-      endpoint: http://localhost:9411/api/v2/spans
+#  tracing:
+#    sampling:
+#      probability: 1.0
+#  zipkin:
+#    config:
+#      endpoint: http://localhost:9411/api/v2/spans
 
 # Logging configuration
 logging:
@@ -33,4 +33,15 @@ logging:
         web: ALL
     com:
       mitocode:
-        microservices: ALL   
+        microservices: ALL
+
+# OpenAPI Configuration
+springdoc:
+  api-docs:
+    path: /api-docs
+    enabled: true
+  swagger-ui:
+    enabled: false
+    path: /openapi.yml    
+              
+        
