@@ -1,5 +1,5 @@
 server:
-  port: ${CUSTOM.SERVER.PORT:9040}
+  port: ${CUSTOM.SERVER.PORT:9045}
 
 # Postgres Configuration
 spring:
@@ -13,7 +13,7 @@ spring:
           format_sql: true
           dialect: org.hibernate.dialect.PostgreSQLDialect
   datasource: 
-    url: ${POSTGRESQL.URL.CONNECTION:jdbc:postgresql://localhost:5432/mitocode}
+    url: ${POSTGRESQL.URL.CONNECTION:jdbc:postgresql://localhost:5433/mitocode}
     username: mitocode
     password: mitocode
 
