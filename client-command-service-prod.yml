@@ -15,7 +15,7 @@ spring:
   datasource: 
     url: ${POSTGRESQL.URL.CONNECTION:jdbc:postgresql://localhost:5433/mitocode}
     username: mitocode
-    password: '{cipher}bfbf1e901b797c054d5638bc4d71777c6397a6c3fc894f498e36012f617be99b'
+    password: '{cipher}adfe9fc5fb8410157309a6f7278029c1e0314c5b34b755fd34809f0cbb195938'
 
 kafka:
   mitocode:
