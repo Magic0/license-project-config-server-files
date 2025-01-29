@@ -14,4 +14,12 @@ server:
   datasource: 
     url: ${POSTGRESQL.URL.CONNECTION:jdbc:postgresql://localhost:5432/mitocode}
     username: mitocode
-    password: '{cipher}bd8b6928566a8e66e5255e081bf9a35218fd7e2a42ec0fcb19ff2f2ff87817cd'
+    password: '{cipher}e88ddb77156db189b0388a44b922ee353f104abd7210efe924baf38bcd2b65ce'
+
+kafka:
+  mitocode:
+    server: localhost
+    topics:
+      - mitocode
+      - mitocode1
+    port: 9092
