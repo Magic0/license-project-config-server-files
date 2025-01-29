@@ -19,7 +19,7 @@ server:
 kafka:
   mitocode:
     server: localhost
-    topics:
+    topic:
       - mitocode
       - mitocode1
     port: 9092
