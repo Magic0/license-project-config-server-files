@@ -48,7 +48,7 @@
                   name: license-service-circuitbreaker
                   statusCodes: 400,401,403,500,503,504
                   fallbackUri: forward:/api/user/v0/users/api/mitocode/user
-
+                  timeoutDuration: 5s  
               ## Customer Filter 1
               # - name: MitocodeCustomFilter
               #   args:
