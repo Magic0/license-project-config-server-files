@@ -75,6 +75,7 @@
             uri: lb://client-query-service
             predicates:
               - Path=/api/client/**
+              - Method=GET
 
             filters:
               - StripPrefix=2
@@ -83,6 +84,7 @@
             uri: lb://client-command-service
             predicates:
               - Path=/api/client/**
+              - Method=POST,PUT,DELETE,PATCH
 
             filters:
               - StripPrefix=2
