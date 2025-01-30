@@ -71,18 +71,18 @@
               - StripPrefix=2
               - AddRequestParameter=email,mitocode@mitocode.com
 
-          - id: license-query-service-route # 9022
-            uri: lb://license-query-service
+          - id: client-query-service-route # 9022
+            uri: lb://client-query-service
             predicates:
-              - Path=/api/license-service/**
+              - Path=/api/client/**
 
             filters:
               - StripPrefix=2
 
-          - id: license-command-service-route # 7099
-            uri: lb://license-command-service
+          - id: client-command-service-route # 7099
+            uri: lb://client-command-service
             predicates:
-              - Path=/api/license-service/**
+              - Path=/api/client/**
 
             filters:
               - StripPrefix=2
