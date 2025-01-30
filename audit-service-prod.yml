@@ -11,7 +11,7 @@ kafka:
 spring:
   data:
     mongodb:
-      uri: ${MONGODB.URL.CONNECTION:mongodb://mitocode:mitocode@localhost:27018/mitocode?authSource=admin}
+      uri: ${MONGODB.URL.CONNECTION:mongodb://magic0:mitocode@localhost:27018/mitocode?authSource=admin}
       
 # Postgres Configuration
   jpa:
