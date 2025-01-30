@@ -9,7 +9,7 @@ spring:
 
 kafka:
   mitocode:
-    server: localhost
+    server: ${KAFKA.SERVER.HOSTNAME:localhost}
     topicName: mitocode
     topicName1: mitocode1
     port: 9092
