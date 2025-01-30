@@ -6,3 +6,10 @@ spring:
   data:
     mongodb:
       uri: ${MONGODB.URL.CONNECTION:mongodb://magic0:mitocode@localhost:27017/mitocode?authSource=admin}
+
+kafka:
+  mitocode:
+    server: localhost
+    topicName: mitocode
+    topicName1: mitocode1
+    port: 9092
