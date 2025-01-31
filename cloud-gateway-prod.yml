@@ -26,7 +26,7 @@
         globalcors:
           corsConfigurations:
             '[/**]':
-              allowedOrigins: "http://localhost:3000, http://server-02.com"
+              allowedOrigins: "http://localhost:3000, http://server-02.com, http://localhost:5173"
               allowedMethods:
                   - POST
                   - GET
