@@ -33,6 +33,10 @@
                   - PUT
                   - DELETE
                   - PATCH
+                  - OPTIONS  # Agrega OPTIONS para las solicitudes preflight
+              allowedHeaders: "*"  # Permite todos los encabezados
+              allowCredentials: true  # Permite credenciales (cookies, auth)
+              maxAge: 3600  # Tiempo de caché para las respuestas preflight (en segundos)
                   
         routes:
           - id: -service-route
